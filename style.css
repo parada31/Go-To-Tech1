@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+:root {
+    --primary-color:#c5434d;
+    --secondary-color: #808080;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Coming Soon', cursive;
+    margin: 0;
+    padding: 0;
+    background: url("images/red.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: #8c262e;
+    border-bottom: 1px solid #808080;
+}
+
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: #808080;
+    border-radius: 6px;
+}
+
+/* Navigation Bar */
+
+.container {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
+    background: white;
+    animation-name: container;
+    animation-duration: .4s;
+}
+
+@keyframes container {
+    from {
+        top: -300px; opacity: 0;
+    }
+    to {
+        top: 0; opacity: 1;
+    }
+}
+
+header {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 1rem;
+}
+
+header h3{
+    color: #ffff;
+    margin-left: 1.5rem;
+}
+
+.table-users {
+    width: 90%;
+    margin: 2rem;
+    border-collapse: collapse;
+}
+
+.table-users th, .table-users td {
+    text-align: left;
+    border-top: 1px solid #dddd;
+    border-bottom: 1px solid #dddd;
+    padding: .5rem;
+}
+
+.table-users th {
+    background: #fafafa;
+    padding: 1rem auto;
+}
+
+.btn{
+    background: transparent;
+    width: 5rem;
+    height:2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease;
+}
+
+.btn-edit {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-edit:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-delete {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-delete:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.table-wrapper{
+    text-align: center;
+}
+
+.btn-add {
+    width: 6rem;
+    height: 2rem;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+}
+
+/* MODAL */
+.modal-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #24232354;
+    display: none;
+}
+
+.modal {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    width: 25rem;
+    margin: 5rem auto;
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
+    animation-name: animateTop;
+    animation-duration: .4s;
+}
+
+@keyframes animateTop {
+    from {
+        top: -300px; opacity: 0;
+    }
+    to {
+        top: 0; opacity: 1;
+    }
+}
+
+.modal-show {
+    display: block;
+}
+
+.modal-header {
+    margin-bottom: 1rem;
+    background: #f8fafb;
+    padding: 2rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.btn-modal {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    width: 9rem;
+}
+
+input {
+    width: 100%;
+    height: 2.2rem;
+    margin-bottom: 1rem;
+    text-indent: .5rem;
+    outline: none;
+}
+
+.lable {
+    text-align: center;
+    border: 5px groove;
+    font-family: 'Coming Soon', cursive;
+    margin: 5px 150px 15px 150px;
+    background: white;
+
+  /*  -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
+    animation-name: lable;
+    animation-duration: .4s; */
+}
+/*
+@keyframes lable {
+    from {
+        opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}*/
+
+.icon1 {
+    font-size: 12px;
+    font-family: 'Coming Soon', cursive;
+    background: white;
+    border: 2px groove var(--secondary-color);
+    float: left;
+    margin: 30px 75px 15px 300px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid black;
+
+   /* -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
+    animation-name: icon1;
+    animation-duration: 2s; */
+}
+/*
+@keyframes icon1 {
+    from {
+        left: -300px; opacity: 0;
+    }
+    to {
+        right: 0; opacity: 1;
+    }
+}*/
+
+.icon2 {
+    font-size: 12px;
+    font-family: 'Coming Soon', cursive;
+    background: white;
+    border: 2px groove var(--primary-color);
+    float: right;
+    margin: 30px 300px 15px 75px;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid black;
+/*
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
+    animation-name: icon2;
+    animation-duration: 2s; */
+}
+
+/*@keyframes icon2 {
+    from {
+        right: -300px; opacity: 0;
+    }
+    to {
+        left: 0; opacity: 1;
+    }
+}*/
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+
