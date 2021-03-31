@@ -232,13 +232,13 @@ input {
     margin: 5px 150px 15px 150px;
     background: white;
 
-  /*  -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
     -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
     animation-name: lable;
     animation-duration: .4s; */
 }
-/*
+
 @keyframes lable {
     from {
         opacity: 0;
@@ -246,7 +246,7 @@ input {
     to {
        opacity: 1;
     }
-}*/
+}
 
 .icon1 {
     font-size: 12px;
@@ -259,13 +259,13 @@ input {
     border-radius: 25px;
     border: 2px solid black;
 
-   /* -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
     -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
     animation-name: icon1;
-    animation-duration: 2s; */
+    animation-duration: 2s; 
 }
-/*
+
 @keyframes icon1 {
     from {
         left: -300px; opacity: 0;
@@ -273,7 +273,7 @@ input {
     to {
         right: 0; opacity: 1;
     }
-}*/
+}
 
 .icon2 {
     font-size: 12px;
@@ -285,22 +285,22 @@ input {
     padding: 15px;
     border-radius: 25px;
     border: 2px solid black;
-/*
+
     -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
     -moz-box-shadpw: 0px 4px 22px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75); 
     animation-name: icon2;
-    animation-duration: 2s; */
+    animation-duration: 2s; 
 }
 
-/*@keyframes icon2 {
+@keyframes icon2 {
     from {
         right: -300px; opacity: 0;
     }
     to {
         left: 0; opacity: 1;
     }
-}*/
+}
 
 
 
